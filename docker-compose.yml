@@ -14,7 +14,7 @@ services:
       - "80:80"
     volumes:
       - ./src:/var/www/html:delegated
-      - ./log:/var/log
+      - ./log/nginx:/var/log/nginx
     depends_on:
       - php
       #- redis
